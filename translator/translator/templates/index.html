@@ -7,14 +7,24 @@
   </head>
 
   <body style="text-align:center">
-    <form id="form-div" action="" method="post">
-      <textarea type="text" name="word" style="width:55%"/></textarea>
+    <form id="form-div" action="{% url translate %}" method="post">
+      {% csrf_token %}
+      <textarea type="text" name="words" style="width:55%"/>{{words}}</textarea>
       <select name="lang" style="width:20%">
-        <option value="ruen">RU -> EN</option>
-        <option value="enru">EN -> RU</option>
+        {% for lang in all_langs %}
+          <option value="{{lang.id}}"{% if lang.selected %}selected="selected"{% endif %}>{{lang.html_option}}</option>
+        {% endfor %}
       </select>
       <input type="submit" name="find" value="Найти" style="width:20%"/>
     </form>
-    <div id="results"></div>
+    <div id="results">
+      {% for trans_word, translations in trans_data %}
+        <b>trans_word</b><br/>
+        {% for trans in translations %}
+          &nbsp;&nbsp;{{forloop.counter}})&nbsp;{{trans}}<br/>
+        {% endfor %}
+        {% if not forloop.last %}<br/>{% endif %}
+      {% endfor %}
+    </div>
   </body>
 </html>
