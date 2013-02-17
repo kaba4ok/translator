@@ -10,4 +10,3 @@ class Dictionary(models.Model):
     languages = models.ForeignKey(LanguagesFromTo)
     word = models.CharField(max_length=40, db_index=True)
     translation = models.TextField()
-
