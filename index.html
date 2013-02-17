@@ -1,9 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8"/>
     <title>Переводчик</title>
+    <link rel="stylesheet" href="main.css"></link>
   </head>
 
-  <body>
+  <body style="text-align:center">
+    <form id="form-div" action="" method="get">
+      <textarea type="text" name="word" style="width:55%"/></textarea>
+      <select name="lang" style="width:20%">
+        <option value="ruen">RU -> EN</option>
+        <option value="enru">EN -> RU</option>
+      </select>
+      <input type="submit" name="find" value="Найти" style="width:20%"/>
+    </form>
+    <div id="results"></div>
   </body>
 </html>

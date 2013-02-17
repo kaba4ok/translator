@@ -1,0 +1,609 @@
+[
+  {
+    "pk": 1, 
+    "model": "translator.languagesfromto", 
+    "fields": {
+      "html_option": "EN->RU"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "translator.languagesfromto", 
+    "fields": {
+      "html_option": "RU->EN"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "translator.dictionary", 
+    "fields": {
+      "languages": 1, 
+      "translation": "car", 
+      "word": "car"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "translator.dictionary", 
+    "fields": {
+      "languages": 1, 
+      "translation": "dog", 
+      "word": "dog"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "translator.dictionary", 
+    "fields": {
+      "languages": 1, 
+      "translation": "dog", 
+      "word": "dog"
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "translator.dictionary", 
+    "fields": {
+      "languages": 1, 
+      "translation": "dog", 
+      "word": "dog"
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "translator.dictionary", 
+    "fields": {
+      "languages": 1, 
+      "translation": "knife", 
+      "word": "knife"
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "translator.dictionary", 
+    "fields": {
+      "languages": 1, 
+      "translation": "knife", 
+      "word": "knife"
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "translator.dictionary", 
+    "fields": {
+      "languages": 1, 
+      "translation": "knife", 
+      "word": "knife"
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "translator.dictionary", 
+    "fields": {
+      "languages": 1, 
+      "translation": "bird", 
+      "word": "bird"
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "translator.dictionary", 
+    "fields": {
+      "languages": 1, 
+      "translation": "bird", 
+      "word": "bird"
+    }
+  }, 
+  {
+    "pk": 10, 
+    "model": "translator.dictionary", 
+    "fields": {
+      "languages": 1, 
+      "translation": "bird", 
+      "word": "bird"
+    }
+  }, 
+  {
+    "pk": 11, 
+    "model": "translator.dictionary", 
+    "fields": {
+      "languages": 1, 
+      "translation": "light", 
+      "word": "light"
+    }
+  }, 
+  {
+    "pk": 12, 
+    "model": "translator.dictionary", 
+    "fields": {
+      "languages": 1, 
+      "translation": "light", 
+      "word": "light"
+    }
+  }, 
+  {
+    "pk": 13, 
+    "model": "translator.dictionary", 
+    "fields": {
+      "languages": 1, 
+      "translation": "fly", 
+      "word": "fly"
+    }
+  }, 
+  {
+    "pk": 14, 
+    "model": "translator.dictionary", 
+    "fields": {
+      "languages": 1, 
+      "translation": "true", 
+      "word": "true"
+    }
+  }, 
+  {
+    "pk": 15, 
+    "model": "translator.dictionary", 
+    "fields": {
+      "languages": 1, 
+      "translation": "true", 
+      "word": "true"
+    }
+  }, 
+  {
+    "pk": 16, 
+    "model": "translator.dictionary", 
+    "fields": {
+      "languages": 1, 
+      "translation": "true", 
+      "word": "true"
+    }
+  }, 
+  {
+    "pk": 17, 
+    "model": "translator.dictionary", 
+    "fields": {
+      "languages": 1, 
+      "translation": "read", 
+      "word": "read"
+    }
+  }, 
+  {
+    "pk": 18, 
+    "model": "translator.dictionary", 
+    "fields": {
+      "languages": 1, 
+      "translation": "doctor", 
+      "word": "doctor"
+    }
+  }, 
+  {
+    "pk": 19, 
+    "model": "translator.dictionary", 
+    "fields": {
+      "languages": 1, 
+      "translation": "fire", 
+      "word": "fire"
+    }
+  }, 
+  {
+    "pk": 20, 
+    "model": "translator.dictionary", 
+    "fields": {
+      "languages": 2, 
+      "translation": "\u043d\u043e\u0441\u043e\u043a", 
+      "word": "\u043d\u043e\u0441\u043e\u043a"
+    }
+  }, 
+  {
+    "pk": 21, 
+    "model": "translator.dictionary", 
+    "fields": {
+      "languages": 2, 
+      "translation": "\u0441\u0443\u043c\u043a\u0430", 
+      "word": "\u0441\u0443\u043c\u043a\u0430"
+    }
+  }, 
+  {
+    "pk": 22, 
+    "model": "translator.dictionary", 
+    "fields": {
+      "languages": 2, 
+      "translation": "\u0441\u0443\u043c\u043a\u0430", 
+      "word": "\u0441\u0443\u043c\u043a\u0430"
+    }
+  }, 
+  {
+    "pk": 23, 
+    "model": "translator.dictionary", 
+    "fields": {
+      "languages": 2, 
+      "translation": "\u0436\u0443\u043a", 
+      "word": "\u0436\u0443\u043a"
+    }
+  }, 
+  {
+    "pk": 24, 
+    "model": "translator.dictionary", 
+    "fields": {
+      "languages": 2, 
+      "translation": "\u0440\u044b\u0431\u0430", 
+      "word": "\u0440\u044b\u0431\u0430"
+    }
+  }, 
+  {
+    "pk": 25, 
+    "model": "translator.dictionary", 
+    "fields": {
+      "languages": 2, 
+      "translation": "\u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442", 
+      "word": "\u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442"
+    }
+  }, 
+  {
+    "pk": 26, 
+    "model": "translator.dictionary", 
+    "fields": {
+      "languages": 2, 
+      "translation": "\u0432\u0441\u0442\u0440\u0435\u0447\u0430", 
+      "word": "\u0432\u0441\u0442\u0440\u0435\u0447\u0430"
+    }
+  }, 
+  {
+    "pk": 27, 
+    "model": "translator.dictionary", 
+    "fields": {
+      "languages": 2, 
+      "translation": "\u0441\u0442\u043e\u043b", 
+      "word": "\u0441\u0442\u043e\u043b"
+    }
+  }, 
+  {
+    "pk": 28, 
+    "model": "translator.dictionary", 
+    "fields": {
+      "languages": 2, 
+      "translation": "\u0434\u0435\u0440\u0435\u0432\u043e", 
+      "word": "\u0434\u0435\u0440\u0435\u0432\u043e"
+    }
+  }, 
+  {
+    "pk": 29, 
+    "model": "translator.dictionary", 
+    "fields": {
+      "languages": 2, 
+      "translation": "\u043f\u043e\u0432\u0435\u0440\u0445\u043d\u043e\u0441\u0442\u044c", 
+      "word": "\u043f\u043e\u0432\u0435\u0440\u0445\u043d\u043e\u0441\u0442\u044c"
+    }
+  }, 
+  {
+    "pk": 30, 
+    "model": "translator.dictionary", 
+    "fields": {
+      "languages": 2, 
+      "translation": "\u0441\u043b\u0430\u0431\u043e\u0441\u0442\u044c", 
+      "word": "\u0441\u043b\u0430\u0431\u043e\u0441\u0442\u044c"
+    }
+  }, 
+  {
+    "pk": 31, 
+    "model": "translator.dictionary", 
+    "fields": {
+      "languages": 2, 
+      "translation": "\u0434\u0435\u0432\u0443\u0448\u043a\u0430", 
+      "word": "\u0434\u0435\u0432\u0443\u0448\u043a\u0430"
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+      "model": "contenttype", 
+      "name": "content type", 
+      "app_label": "contenttypes"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+      "model": "dictionary", 
+      "name": "dictionary", 
+      "app_label": "translator"
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+      "model": "group", 
+      "name": "group", 
+      "app_label": "auth"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+      "model": "languagesfromto", 
+      "name": "languages from to", 
+      "app_label": "translator"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+      "model": "permission", 
+      "name": "permission", 
+      "app_label": "auth"
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+      "model": "session", 
+      "name": "session", 
+      "app_label": "sessions"
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+      "model": "site", 
+      "name": "site", 
+      "app_label": "sites"
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+      "model": "user", 
+      "name": "user", 
+      "app_label": "auth"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "sites.site", 
+    "fields": {
+      "domain": "example.com", 
+      "name": "example.com"
+    }
+  }, 
+  {
+    "pk": 10, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_group", 
+      "name": "Can add group", 
+      "content_type": 4
+    }
+  }, 
+  {
+    "pk": 11, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_group", 
+      "name": "Can change group", 
+      "content_type": 4
+    }
+  }, 
+  {
+    "pk": 12, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_group", 
+      "name": "Can delete group", 
+      "content_type": 4
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_permission", 
+      "name": "Can add permission", 
+      "content_type": 3
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_permission", 
+      "name": "Can change permission", 
+      "content_type": 3
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_permission", 
+      "name": "Can delete permission", 
+      "content_type": 3
+    }
+  }, 
+  {
+    "pk": 13, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_user", 
+      "name": "Can add user", 
+      "content_type": 5
+    }
+  }, 
+  {
+    "pk": 14, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_user", 
+      "name": "Can change user", 
+      "content_type": 5
+    }
+  }, 
+  {
+    "pk": 15, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_user", 
+      "name": "Can delete user", 
+      "content_type": 5
+    }
+  }, 
+  {
+    "pk": 16, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_contenttype", 
+      "name": "Can add content type", 
+      "content_type": 6
+    }
+  }, 
+  {
+    "pk": 17, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_contenttype", 
+      "name": "Can change content type", 
+      "content_type": 6
+    }
+  }, 
+  {
+    "pk": 18, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_contenttype", 
+      "name": "Can delete content type", 
+      "content_type": 6
+    }
+  }, 
+  {
+    "pk": 19, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_session", 
+      "name": "Can add session", 
+      "content_type": 7
+    }
+  }, 
+  {
+    "pk": 20, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_session", 
+      "name": "Can change session", 
+      "content_type": 7
+    }
+  }, 
+  {
+    "pk": 21, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_session", 
+      "name": "Can delete session", 
+      "content_type": 7
+    }
+  }, 
+  {
+    "pk": 22, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_site", 
+      "name": "Can add site", 
+      "content_type": 8
+    }
+  }, 
+  {
+    "pk": 23, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_site", 
+      "name": "Can change site", 
+      "content_type": 8
+    }
+  }, 
+  {
+    "pk": 24, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_site", 
+      "name": "Can delete site", 
+      "content_type": 8
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_dictionary", 
+      "name": "Can add dictionary", 
+      "content_type": 2
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_dictionary", 
+      "name": "Can change dictionary", 
+      "content_type": 2
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_dictionary", 
+      "name": "Can delete dictionary", 
+      "content_type": 2
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_languagesfromto", 
+      "name": "Can add languages from to", 
+      "content_type": 1
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_languagesfromto", 
+      "name": "Can change languages from to", 
+      "content_type": 1
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_languagesfromto", 
+      "name": "Can delete languages from to", 
+      "content_type": 1
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "root", 
+      "first_name": "", 
+      "last_name": "", 
+      "is_active": true, 
+      "is_superuser": true, 
+      "is_staff": true, 
+      "last_login": "2013-02-17T19:33:57.979", 
+      "groups": [], 
+      "user_permissions": [], 
+      "password": "pbkdf2_sha256$10000$IjEi8VmF3Aty$GegFVMt5Ig4lFEmoVnFvjzvwvHAdRral05vC6Wj0tgo=", 
+      "email": "a@a.com", 
+      "date_joined": "2013-02-17T19:33:57.979"
+    }
+  }
+]

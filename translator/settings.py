@@ -4,15 +4,15 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    ('Zigzag', 'impossiblevalue@gmail.com'),
+    #('Zigzag', 'impossiblevalue@gmail.com'),
 )
 
 MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'translator',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'translator_db',
         'USER': 'root',
         'PASSWORD': '',
         'HOST': 'localhost',
@@ -104,7 +104,7 @@ TEMPLATE_DIRS = (
 )
 
 INSTALLED_APPS = (
-    'tarnslator',
+    'translator.translator',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
