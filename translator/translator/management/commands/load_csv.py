@@ -14,6 +14,9 @@ class Command(BaseCommand):
         data = {'trans': [],
                 'langs': {}}
 
+        models.Dictionary.objects.all().delete()
+        models.LanguagesFromTo.objects.all().delete()
+
         for l in f:
             trans_matched = self.trans_re.match(l.strip())
             if trans_matched:
@@ -27,7 +30,7 @@ class Command(BaseCommand):
                                      .group(2)
                                      .decode('utf-8'),
                                 translation=trans_matched
-                                            .group(2)
+                                            .group(3)
                                             .decode('utf-8')))
                 data['trans'].append(dict_obj)
                 continue

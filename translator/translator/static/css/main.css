@@ -5,4 +5,4 @@ body {padding-left:10px; padding-right:10px}
 #form-div select {padding-left: 1%}
 #form-div select option{text-align: left; padding-left: 15%}
 
-div#results {width: 100%; height: 240px; border-style: groove; border-width: 3px; margin-top:20px}
+div#results {width: auto; border-style: groove; border-width: 3px; margin-top:20px; padding-left: 10px; padding-right: 10px; padding-bottom: 20px;}
