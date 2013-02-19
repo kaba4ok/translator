@@ -36,4 +36,7 @@ nosetests.xml
 
 # TZ
 req.docx
-todo.txt
+
+.~lock.req.docx#
+.settings
+
