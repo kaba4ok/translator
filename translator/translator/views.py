@@ -1,6 +1,7 @@
 # encoding: utf-8
 
 from collections import defaultdict
+import re
 
 from django.shortcuts import render_to_response
 from django.template import RequestContext
@@ -8,6 +9,7 @@ from django.template import RequestContext
 from .forms import TranslateForm
 from . import models
 
+word_re = re.compile('\w+')
 def translate(request):
     context_instance = RequestContext(request)
     all_langs = models.LanguagesFromTo.objects.all()
