@@ -42,6 +42,9 @@ def translate(request):
     if not words_str:
         return get_response()
 
+    log_record = models.QueryLog(text=words_str[:70])
+    log_record.save()
+
     words = words_str.split()
     translations = models.Dictionary.objects.filter(languages=lang,
                                                     word__in=words)
@@ -51,6 +54,5 @@ def translate(request):
 
     data['words'] = words_str
     data['trans_data'] = trans_data.items()
-    print data
 
     return get_response()
