@@ -34,7 +34,13 @@ class QueryLogAdmin(admin.ModelAdmin):
 
 
 class WordNotFoundAdmin(admin.ModelAdmin):
-    pass
+    list_display = (u'word',)
+    fields = ('word',)
+    readonly_fields = ('word',)
+    list_per_page = 500
+
+    def has_add_permission(self, obj=None):
+        return False
 
 
 site = admin.sites.AdminSite()

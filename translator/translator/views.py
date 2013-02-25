@@ -59,7 +59,7 @@ def translate(request):
     words_not_found = words_set - words_found
 
     for word in words_not_found:
-        models.WordNotFound(word=word).save()
+        models.WordNotFound(word=word[:40]).save()
 
     data['words'] = words_str
     data['trans_data'] = trans_data.items()
