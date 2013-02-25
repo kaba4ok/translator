@@ -7,6 +7,8 @@
   </head>
 
   <body>
+    <div style="text-align:right"><a href="{% url admin:index %}">Администрирование сайта</a></div>
+    <br/>
     <form id="form-div" action="{% url translate %}" method="post">
       {% csrf_token %}
       <textarea type="text" name="words" style="width:55%"/>{{words}}</textarea>

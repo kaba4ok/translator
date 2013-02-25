@@ -49,8 +49,17 @@ def translate(request):
     translations = models.Dictionary.objects.filter(languages=lang,
                                                     word__in=words)
     trans_data = defaultdict(list)
+    words_set = set(words)
+    words_found = set()
+
     for trans in translations:
         trans_data[trans.word].append(trans.translation)
+        words_found.add(trans.word)
+
+    words_not_found = words_set - words_found
+
+    for word in words_not_found:
+        models.WordNotFound(word=word).save()
 
     data['words'] = words_str
     data['trans_data'] = trans_data.items()

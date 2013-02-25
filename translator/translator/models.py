@@ -28,7 +28,7 @@ class Dictionary(models.Model):
 
 
 class WordNotFound(models.Model):
-    word = models.CharField(max_length=40, db_index=True)
+    word = models.CharField(max_length=40, db_index=True, primary_key=True)
 
     class Meta:
         verbose_name = u'Ненайденное слово'
