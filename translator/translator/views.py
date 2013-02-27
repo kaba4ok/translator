@@ -45,7 +45,9 @@ def translate(request):
     log_record = models.QueryLog(text=words_str[:70])
     log_record.save()
 
-    words = words_str.split()
+    words_splitted = words_str.split()
+    words = [' '.join(words_splitted)] + words_splitted
+
     translations = models.Dictionary.objects.filter(languages=lang,
                                                     word__in=words)
     trans_data = defaultdict(list)
