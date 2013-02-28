@@ -24,6 +24,8 @@ class Command(BaseCommand):
             if len(l_splitted) != 2:
                 continue
             word = ' '.join(l_splitted[0].strip().split())
+            if len(word) > 40:
+                continue
             translation = ' '.join(l_splitted[1].strip().split())
             dict_models.append(models.Dictionary(languages=lang,
                                                  word=word,
