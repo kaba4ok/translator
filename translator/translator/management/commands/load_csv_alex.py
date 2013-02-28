@@ -13,7 +13,7 @@ class Command(BaseCommand):
         dict_models = []
         lang = None
         for l in f:
-            l = l.strip()
+            l = l.strip().decode('utf-8')
             if l.startswith('lang:'):
                 lang = models.LanguagesFromTo.objects.get(html_option=l[5:])
                 print lang
