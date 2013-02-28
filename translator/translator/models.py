@@ -22,6 +22,9 @@ class Dictionary(models.Model):
                             verbose_name=u'Слово')
     translation = models.TextField(verbose_name=u'Перевод')
 
+    def __unicode__(self):
+        return u'%s -> %s' % (self.word,
+                              self.translation)
     class Meta:
         verbose_name = u'Запись словаря'
         verbose_name_plural = u'Словарь'

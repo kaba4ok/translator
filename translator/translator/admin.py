@@ -15,6 +15,12 @@ class DictionaryAdmin(admin.ModelAdmin):
     ordering = ('languages', 'word')
     list_filter = ('languages',)
 
+    def changelist_view(self, request, extra_context=None):
+        extra_context = extra_context or {}
+        extra_context['langs'] = models.LanguagesFromTo.objects.order_by('id')
+        return super(DictionaryAdmin,
+                     self).changelist_view(request, extra_context=extra_context)
+
 
 class QueryLogAdmin(admin.ModelAdmin):
     list_display = ('time_fmt', 'text')

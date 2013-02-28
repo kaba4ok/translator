@@ -3,11 +3,14 @@
 from collections import defaultdict
 import re
 
-from django.shortcuts import render_to_response
+from django.shortcuts import render_to_response, redirect
 from django.template import RequestContext
+from django.core.urlresolvers import reverse
+from django.contrib import messages
 
 from .forms import TranslateForm
 from . import models
+from . import admin
 
 word_re = re.compile('\w+')
 def translate(request):
@@ -67,3 +70,52 @@ def translate(request):
     data['trans_data'] = trans_data.items()
 
     return get_response()
+
+def load_dictionary(request):
+    response = redirect(reverse('admin:translator_dictionary_changelist'))
+    if not request.POST or not request.FILES:
+        return response
+    lang_id = request.POST.get('lang')
+
+    try:
+        lang_id = int(lang_id)
+    except (TypeError, ValueError):
+        return response
+
+    try:
+        lang = models.LanguagesFromTo.objects.get(id=lang_id)
+    except models.LanguagesFromTo.DoesNotExist:
+        return response
+
+    dictionary = set(tuple(d)
+                     for d in models
+                              .Dictionary
+                              .objects
+                              .filter(languages=lang)
+                              .values_list('word', 'translation'))
+
+    data_to_dictionary = []
+    for file in request.FILES.itervalues():
+        data = file.read()
+        try:
+            data = data.decode('utf-8')
+        except UnicodeDecodeError:
+            continue
+        for l in data.split('\n'):
+            l_splitted = l.strip().split(';')[:2]
+            if len(l_splitted) != 2:
+                continue
+            word = ' '.join(l_splitted[0].strip().split())
+            translation = ' '.join(l_splitted[1].strip().split())
+            if not (word, translation) in dictionary:
+                data_to_dictionary.append(models.Dictionary(languages=lang,
+                                                            word=word,
+                                                            translation=translation))
+                
+    if data_to_dictionary:
+        models.Dictionary.objects.bulk_create(data_to_dictionary)
+
+    messages.add_message(request,
+                         messages.INFO,
+                         "Добавлено записей: %d" % len(data_to_dictionary))
+    return response
